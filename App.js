@@ -19,7 +19,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.result}>{result}</Text>
+        <Text style={styles.header}>Velkommen til lommeregneren</Text>
+           <Text style={styles.result}>{result}</Text>
 
       <View style={styles.row}>
         <TouchableOpacity onPress={() => handleButtonPress('7')}>
@@ -128,6 +129,11 @@ const styles = StyleSheet.create({
     margin: 5,
     marginTop: 20,
     borderRadius: 10, // Tilføjet for at runde knappernes kanter
+  },
+  header: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
   },
 
 });
