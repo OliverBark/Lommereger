@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import * as SplashScreen from 'expo-splash-screen';
+
 
 export default function App() {
   const [result, setResult] = useState('');
-
-  useEffect(() => {
-    SplashScreen.hideAsync();
-  }, []);
 
   const handleButtonPress = (value) => {
     setResult(result + value);
